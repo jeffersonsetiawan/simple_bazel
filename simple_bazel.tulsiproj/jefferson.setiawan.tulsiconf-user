@@ -1,0 +1,16 @@
+{
+  "optionSet" : {
+    "BazelPath" : {
+      "p" : "/opt/homebrew/bin/bazelisk"
+    },
+    "DeletePreviousXcodeproj" : {
+      "p" : "YES"
+    },
+    "OpenXcode" : {
+      "p" : "YES"
+    },
+    "WorkspaceRootPath" : {
+      "p" : "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+    }
+  }
+}

@@ -20,12 +20,22 @@ final class ViewController: UIViewController {
         return view
     }()
     
+    private let image: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "toped_change_phone_intro"))
+        return imageView
+    }()
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         
         view.addSubview(button)
         view.addSubview(text)
+        view.addSubview(image)
         NSLayoutConstraint.activate([
+            image.topAnchor.constraint(equalTo: view.topAnchor, constant: 16),
+            image.widthAnchor.constraint(equalToConstant: 40),
+            image.heightAnchor.constraint(equalToConstant: 40),
+            image.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             text.topAnchor.constraint(equalTo: view.topAnchor, constant: 24),
             text.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
             text.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 24),
