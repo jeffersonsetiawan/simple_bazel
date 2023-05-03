@@ -11,6 +11,9 @@
     },
     "WorkspaceRootPath" : {
       "p" : "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+    },
+    "XcodeprojOutputPath" : {
+      "p" : "/Users/jefferson.setiawan/iOS"
     }
   }
 }

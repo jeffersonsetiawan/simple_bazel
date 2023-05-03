@@ -8,6 +8,7 @@ build --swiftcopt=-whole-module-optimization
 build --host_swiftcopt=-whole-module-optimization
 build --subcommands
 build --verbose_failures
+build --copt=-Osize
 
 test --curses=no
 test --compilation_mode=fastbuild

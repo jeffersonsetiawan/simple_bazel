@@ -1,7 +1,9 @@
 {
   "configDefaults" : {
     "optionSet" : {
-
+      "UseLegacyBuildSystem" : {
+        "p" : "NO"
+      }
     }
   },
   "packages" : [

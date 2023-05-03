@@ -1,5 +1,6 @@
 import UIKit
 import SwiftLibrary
+import Pdp
 
 @UIApplicationMain
 final class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,17 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
-
+        let model = PdpSecondPriority(
+            id: "1", 
+            name: "iPhone", 
+            price: "20000", 
+            campaign: PdpCampaign(campaignId: 1, name: "FlashSale limited")
+        )
+        print(model.id)
         return true
+    }
+
+    func jeff1() {
+        print("myname")
     }
 }

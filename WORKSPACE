@@ -33,3 +33,18 @@ load(
 )
 
 apple_support_dependencies()
+
+# 
+# to check exact version, please visit https://github.com/MobileNativeFoundation/rules_xcodeproj/blob/1.3.1/xcodeproj/repositories.bzl
+http_archive(
+    name = "rules_xcodeproj",
+    sha256 = "54cee524abd72db950482ded168dd44397369077b734d4cf4b06f734e10a3e80",
+    url = "https://github.com/MobileNativeFoundation/rules_xcodeproj/releases/download/1.5.1/release.tar.gz",
+)
+
+load(
+    "@rules_xcodeproj//xcodeproj:repositories.bzl",
+    "xcodeproj_rules_dependencies",
+)
+
+xcodeproj_rules_dependencies()

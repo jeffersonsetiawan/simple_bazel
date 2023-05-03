@@ -2,8 +2,12 @@ import UIKit
 
 open class HelloWorld {
 	open func hello() {
-		UI_USER_INTERFACE_IDIOM()
+		print("hello")
 	}
+}
+
+func jeffBar() {
+    print("BAR!")
 }
 
 public func fooA() {
