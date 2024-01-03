@@ -1,5 +1,3 @@
-import UIKit
-
 public struct PdpSecondPriority: Decodable {
 	public var id: String
 	public var name: String

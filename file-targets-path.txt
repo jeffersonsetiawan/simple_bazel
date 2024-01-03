@@ -1,0 +1,8 @@
+{
+   "file_targets": {
+     "ios/DummyApplication/AppDelegate.swift": ["DummyApplication"],
+     "ios/DummyApplication/ViewController.swift": ["DummyApplication"],
+     "ios/SwiftLibrary/Bar.swift": ["SwiftLibrary"],
+     "ios/Pdp/PdpModel.swift": ["Pdp"]
+   }
+ }

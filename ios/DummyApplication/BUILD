@@ -28,7 +28,7 @@ swift_library(
 
 ios_application(
     name = "DummyApplication",
-    minimum_os_version = "11.0",
+    minimum_os_version = "13.0",
     deps = [":AppSource"],
     infoplists = ["Info.plist"],
     families = ["iphone"],

@@ -1,0 +1,2081 @@
+event {
+id {
+  started {
+  }
+}
+children {
+  progress {
+  }
+}
+children {
+  unstructured_command_line {
+  }
+}
+children {
+  structured_command_line {
+    command_line_label: "original"
+  }
+}
+children {
+  structured_command_line {
+    command_line_label: "canonical"
+  }
+}
+children {
+  structured_command_line {
+    command_line_label: "tool"
+  }
+}
+children {
+  build_metadata {
+  }
+}
+children {
+  options_parsed {
+  }
+}
+children {
+  workspace_status {
+  }
+}
+children {
+  pattern {
+    pattern: "//ios/DummyApplication"
+  }
+}
+children {
+  build_finished {
+  }
+}
+started {
+  uuid: "170dc6e3-25e4-40b6-9b87-d9ed39bbbd98"
+  start_time_millis: 1683519244078
+  build_tool_version: "5.3.0"
+  options_description: "--apple_platform_type=ios --ios_minimum_os=12.0 --watchos_minimum_os=3.0 --cpu=ios_sim_arm64 --spawn_strategy=local --features=swift.use_global_module_cache --swiftcopt=-whole-module-optimization --host_swiftcopt=-whole-module-optimization --subcommands=1 --verbose_failures --copt=-Osize --features=swift.index_while_building --output_groups=+swift_index_store --build_event_text_file=event_text_file.txt"
+  command: "build"
+  working_directory: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+  workspace_directory: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+  server_pid: 19279
+  start_time {
+    seconds: 1683519244
+    nanos: 78000000
+  }
+}
+}
+
+event {
+id {
+  build_metadata {
+  }
+}
+build_metadata {
+}
+}
+
+event {
+id {
+  unstructured_command_line {
+  }
+}
+unstructured_command_line {
+  args: "build"
+  args: "--startup_time=1516"
+  args: "--command_wait_time=0"
+  args: "--extract_data_time=0"
+  args: "--restart_reason=no_daemon"
+  args: "--binary_path=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin/bazel"
+  args: "--rc_source=client"
+  args: "--default_override=0:common=--isatty=1"
+  args: "--default_override=0:common=--terminal_columns=80"
+  args: "--rc_source=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel/.bazelrc"
+  args: "--default_override=1:test=--curses=no"
+  args: "--default_override=1:test=--compilation_mode=fastbuild"
+  args: "--default_override=1:test=--test_output=all"
+  args: "--default_override=1:test=--test_timeout=3600"
+  args: "--default_override=1:build=--apple_platform_type=ios"
+  args: "--default_override=1:build=--ios_minimum_os=12.0"
+  args: "--default_override=1:build=--watchos_minimum_os=3.0"
+  args: "--default_override=1:build=--cpu=ios_sim_arm64"
+  args: "--default_override=1:build=--spawn_strategy=local"
+  args: "--default_override=1:build=--features=swift.use_global_module_cache"
+  args: "--default_override=1:build=--swiftcopt=-whole-module-optimization"
+  args: "--default_override=1:build=--host_swiftcopt=-whole-module-optimization"
+  args: "--default_override=1:build=--subcommands"
+  args: "--default_override=1:build=--verbose_failures"
+  args: "--default_override=1:build=--copt=-Osize"
+  args: "--client_env=TERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+  args: "--client_env=SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.CR5LwROwM4/Listeners"
+  args: "--client_env=LC_TERMINAL_VERSION=3.4.19"
+  args: "--client_env=COLORFGBG=7;0"
+  args: "--client_env=ITERM_PROFILE=Default"
+  args: "--client_env=XPC_FLAGS=0x0"
+  args: "--client_env=PWD=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+  args: "--client_env=SHELL=/bin/zsh"
+  args: "--client_env=__CFBundleIdentifier=com.googlecode.iterm2"
+  args: "--client_env=SECURITYSESSIONID=186cc"
+  args: "--client_env=LC_CTYPE=UTF-8"
+  args: "--client_env=TERM_PROGRAM_VERSION=3.4.19"
+  args: "--client_env=TERM_PROGRAM=iTerm.app"
+  args: "--client_env=PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+  args: "--client_env=LC_TERMINAL=iTerm2"
+  args: "--client_env=COLORTERM=truecolor"
+  args: "--client_env=COMMAND_MODE=unix2003"
+  args: "--client_env=TERM=xterm-256color"
+  args: "--client_env=HOME=/Users/jefferson.setiawan"
+  args: "--client_env=TMPDIR=/var/folders/7c/v_jgn_s545d898f7g4qm_g0r0000gp/T/"
+  args: "--client_env=USER=jefferson.setiawan"
+  args: "--client_env=XPC_SERVICE_NAME=0"
+  args: "--client_env=LOGNAME=jefferson.setiawan"
+  args: "--client_env=LaunchInstanceID=61DC7B16-D14E-4314-9266-6365AC7598D7"
+  args: "--client_env=ITERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+  args: "--client_env=__CF_USER_TEXT_ENCODING=0x1F6:0x0:0x0"
+  args: "--client_env=SHLVL=1"
+  args: "--client_env=OLDPWD=/Users/jefferson.setiawan/iOS/Experiments"
+  args: "--client_env=HOMEBREW_PREFIX=/opt/homebrew"
+  args: "--client_env=HOMEBREW_CELLAR=/opt/homebrew/Cellar"
+  args: "--client_env=HOMEBREW_REPOSITORY=/opt/homebrew"
+  args: "--client_env=MANPATH=/opt/homebrew/share/man:/opt/homebrew/share/man:::"
+  args: "--client_env=INFOPATH=/opt/homebrew/share/info:/opt/homebrew/share/info:"
+  args: "--client_env=RBENV_SHELL=zsh"
+  args: "--client_env=ZSH=/Users/jefferson.setiawan/.oh-my-zsh"
+  args: "--client_env=PAGER=less"
+  args: "--client_env=LESS=-R"
+  args: "--client_env=LSCOLORS=Gxfxcxdxbxegedabagacad"
+  args: "--client_env=LANG=en_US.UTF-8"
+  args: "--client_env=LANGUAGE=en_US.UTF-8"
+  args: "--client_env=LC_ALL=en_US.UTF-8"
+  args: "--client_env=SNAPSHOT_DUMP_PATH=/Users/jefferson.setiawan/iOS/ios-tokopedia"
+  args: "--client_env=LS_COLORS=no=00:fi=00:di=01;31:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:"
+  args: "--client_env=PNPM_HOME=/Users/jefferson.setiawan/Library/pnpm"
+  args: "--client_env=_=/opt/homebrew/bin/bazel"
+  args: "--client_env=BAZELISK_SKIP_WRAPPER=true"
+  args: "--client_cwd=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+  args: "//ios/DummyApplication"
+  args: "--features=swift.index_while_building"
+  args: "--output_groups=+swift_index_store"
+  args: "--build_event_text_file=event_text_file.txt"
+}
+}
+
+event {
+id {
+  structured_command_line {
+    command_line_label: "canonical"
+  }
+}
+structured_command_line {
+  command_line_label: "canonical"
+  sections {
+    section_label: "executable"
+    chunk_list {
+      chunk: "bazel"
+    }
+  }
+  sections {
+    section_label: "startup options"
+    option_list {
+      option {
+        combined_form: "--max_idle_secs=10800"
+        option_name: "max_idle_secs"
+        option_value: "10800"
+        effect_tags: EAGERNESS_TO_EXIT
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--noshutdown_on_low_sys_mem"
+        option_name: "shutdown_on_low_sys_mem"
+        option_value: "0"
+        effect_tags: EAGERNESS_TO_EXIT
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--connect_timeout_secs=30"
+        option_name: "connect_timeout_secs"
+        option_value: "30"
+        effect_tags: BAZEL_INTERNAL_CONFIGURATION
+      }
+      option {
+        combined_form: "--output_user_root=/var/tmp/_bazel_jefferson.setiawan"
+        option_name: "output_user_root"
+        option_value: "/var/tmp/_bazel_jefferson.setiawan"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--install_base=/var/tmp/_bazel_jefferson.setiawan/install/3c4a7a3c33b4c067b191587b066e5f1b"
+        option_name: "install_base"
+        option_value: "/var/tmp/_bazel_jefferson.setiawan/install/3c4a7a3c33b4c067b191587b066e5f1b"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--install_md5=3c4a7a3c33b4c067b191587b066e5f1b"
+        option_name: "install_md5"
+        option_value: "3c4a7a3c33b4c067b191587b066e5f1b"
+        effect_tags: LOSES_INCREMENTAL_STATE
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--output_base=/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a"
+        option_name: "output_base"
+        option_value: "/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--workspace_directory=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        option_name: "workspace_directory"
+        option_value: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_system_javabase="
+        option_name: "default_system_javabase"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--failure_detail_out=/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/failure_detail.rawproto"
+        option_name: "failure_detail_out"
+        option_value: "/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/failure_detail.rawproto"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--expand_configs_in_place"
+        option_name: "expand_configs_in_place"
+        option_value: "1"
+        effect_tags: NO_OP
+        metadata_tags: DEPRECATED
+      }
+      option {
+        combined_form: "--idle_server_tasks"
+        option_name: "idle_server_tasks"
+        option_value: "1"
+        effect_tags: LOSES_INCREMENTAL_STATE
+        effect_tags: HOST_MACHINE_RESOURCE_OPTIMIZATIONS
+      }
+      option {
+        combined_form: "--write_command_log"
+        option_name: "write_command_log"
+        option_value: "1"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--nowatchfs"
+        option_name: "watchfs"
+        option_value: "0"
+        effect_tags: UNKNOWN
+        metadata_tags: DEPRECATED
+      }
+      option {
+        combined_form: "--nofatal_event_bus_exceptions"
+        option_name: "fatal_event_bus_exceptions"
+        option_value: "0"
+        effect_tags: EAGERNESS_TO_EXIT
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--nowindows_enable_symlinks"
+        option_name: "windows_enable_symlinks"
+        option_value: "0"
+        effect_tags: BAZEL_INTERNAL_CONFIGURATION
+      }
+      option {
+        combined_form: "--client_debug=false"
+        option_name: "client_debug"
+        option_value: "false"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+      }
+      option {
+        combined_form: "--product_name=Bazel"
+        option_name: "product_name"
+        option_value: "Bazel"
+        effect_tags: LOSES_INCREMENTAL_STATE
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--option_sources="
+        option_name: "option_sources"
+        effect_tags: AFFECTS_OUTPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--ignore_all_rc_files"
+        option_name: "ignore_all_rc_files"
+        option_value: "1"
+        effect_tags: CHANGES_INPUTS
+      }
+    }
+  }
+  sections {
+    section_label: "command"
+    chunk_list {
+      chunk: "build"
+    }
+  }
+  sections {
+    section_label: "command options"
+    option_list {
+      option {
+        combined_form: "--isatty=1"
+        option_name: "isatty"
+        option_value: "1"
+        effect_tags: UNKNOWN
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--terminal_columns=80"
+        option_name: "terminal_columns"
+        option_value: "80"
+        effect_tags: UNKNOWN
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--apple_platform_type=ios"
+        option_name: "apple_platform_type"
+        option_value: "ios"
+        effect_tags: BAZEL_INTERNAL_CONFIGURATION
+      }
+      option {
+        combined_form: "--ios_minimum_os=12.0"
+        option_name: "ios_minimum_os"
+        option_value: "12.0"
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--watchos_minimum_os=3.0"
+        option_name: "watchos_minimum_os"
+        option_value: "3.0"
+        effect_tags: LOSES_INCREMENTAL_STATE
+      }
+      option {
+        combined_form: "--cpu=ios_sim_arm64"
+        option_name: "cpu"
+        option_value: "ios_sim_arm64"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--spawn_strategy=local"
+        option_name: "spawn_strategy"
+        option_value: "local"
+        effect_tags: EXECUTION
+      }
+      option {
+        combined_form: "--features=swift.use_global_module_cache"
+        option_name: "features"
+        option_value: "swift.use_global_module_cache"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--swiftcopt=-whole-module-optimization"
+        option_name: "swiftcopt"
+        option_value: "-whole-module-optimization"
+        effect_tags: ACTION_COMMAND_LINES
+      }
+      option {
+        combined_form: "--host_swiftcopt=-whole-module-optimization"
+        option_name: "host_swiftcopt"
+        option_value: "-whole-module-optimization"
+        effect_tags: ACTION_COMMAND_LINES
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--subcommands"
+        option_name: "subcommands"
+        option_value: "1"
+        effect_tags: TERMINAL_OUTPUT
+      }
+      option {
+        combined_form: "--verbose_failures"
+        option_name: "verbose_failures"
+        option_value: "1"
+        effect_tags: TERMINAL_OUTPUT
+      }
+      option {
+        combined_form: "--copt=-Osize"
+        option_name: "copt"
+        option_value: "-Osize"
+        effect_tags: ACTION_COMMAND_LINES
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--rc_source=client"
+        option_name: "rc_source"
+        option_value: "client"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=0:common=--isatty=1"
+        option_name: "default_override"
+        option_value: "0:common=--isatty=1"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=0:common=--terminal_columns=80"
+        option_name: "default_override"
+        option_value: "0:common=--terminal_columns=80"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--rc_source=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel/.bazelrc"
+        option_name: "rc_source"
+        option_value: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel/.bazelrc"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--curses=no"
+        option_name: "default_override"
+        option_value: "1:test=--curses=no"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--compilation_mode=fastbuild"
+        option_name: "default_override"
+        option_value: "1:test=--compilation_mode=fastbuild"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--test_output=all"
+        option_name: "default_override"
+        option_value: "1:test=--test_output=all"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--test_timeout=3600"
+        option_name: "default_override"
+        option_value: "1:test=--test_timeout=3600"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--apple_platform_type=ios"
+        option_name: "default_override"
+        option_value: "1:build=--apple_platform_type=ios"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--ios_minimum_os=12.0"
+        option_name: "default_override"
+        option_value: "1:build=--ios_minimum_os=12.0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--watchos_minimum_os=3.0"
+        option_name: "default_override"
+        option_value: "1:build=--watchos_minimum_os=3.0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--cpu=ios_sim_arm64"
+        option_name: "default_override"
+        option_value: "1:build=--cpu=ios_sim_arm64"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--spawn_strategy=local"
+        option_name: "default_override"
+        option_value: "1:build=--spawn_strategy=local"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--features=swift.use_global_module_cache"
+        option_name: "default_override"
+        option_value: "1:build=--features=swift.use_global_module_cache"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--swiftcopt=-whole-module-optimization"
+        option_name: "default_override"
+        option_value: "1:build=--swiftcopt=-whole-module-optimization"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--host_swiftcopt=-whole-module-optimization"
+        option_name: "default_override"
+        option_value: "1:build=--host_swiftcopt=-whole-module-optimization"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--subcommands"
+        option_name: "default_override"
+        option_value: "1:build=--subcommands"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--verbose_failures"
+        option_name: "default_override"
+        option_value: "1:build=--verbose_failures"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--copt=-Osize"
+        option_name: "default_override"
+        option_value: "1:build=--copt=-Osize"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--startup_time=1516"
+        option_name: "startup_time"
+        option_value: "1516"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--command_wait_time=0"
+        option_name: "command_wait_time"
+        option_value: "0"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--extract_data_time=0"
+        option_name: "extract_data_time"
+        option_value: "0"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--restart_reason=no_daemon"
+        option_name: "restart_reason"
+        option_value: "no_daemon"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--binary_path=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin/bazel"
+        option_name: "binary_path"
+        option_value: "/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin/bazel"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        option_name: "client_env"
+        option_value: "TERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.CR5LwROwM4/Listeners"
+        option_name: "client_env"
+        option_value: "SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.CR5LwROwM4/Listeners"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_TERMINAL_VERSION=3.4.19"
+        option_name: "client_env"
+        option_value: "LC_TERMINAL_VERSION=3.4.19"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=COLORFGBG=7;0"
+        option_name: "client_env"
+        option_value: "COLORFGBG=7;0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=ITERM_PROFILE=Default"
+        option_name: "client_env"
+        option_value: "ITERM_PROFILE=Default"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=XPC_FLAGS=0x0"
+        option_name: "client_env"
+        option_value: "XPC_FLAGS=0x0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PWD=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        option_name: "client_env"
+        option_value: "PWD=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SHELL=/bin/zsh"
+        option_name: "client_env"
+        option_value: "SHELL=/bin/zsh"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=__CFBundleIdentifier=com.googlecode.iterm2"
+        option_name: "client_env"
+        option_value: "__CFBundleIdentifier=com.googlecode.iterm2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SECURITYSESSIONID=186cc"
+        option_name: "client_env"
+        option_value: "SECURITYSESSIONID=186cc"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_CTYPE=UTF-8"
+        option_name: "client_env"
+        option_value: "LC_CTYPE=UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM_PROGRAM_VERSION=3.4.19"
+        option_name: "client_env"
+        option_value: "TERM_PROGRAM_VERSION=3.4.19"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM_PROGRAM=iTerm.app"
+        option_name: "client_env"
+        option_value: "TERM_PROGRAM=iTerm.app"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        option_name: "client_env"
+        option_value: "PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_TERMINAL=iTerm2"
+        option_name: "client_env"
+        option_value: "LC_TERMINAL=iTerm2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=COLORTERM=truecolor"
+        option_name: "client_env"
+        option_value: "COLORTERM=truecolor"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=COMMAND_MODE=unix2003"
+        option_name: "client_env"
+        option_value: "COMMAND_MODE=unix2003"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM=xterm-256color"
+        option_name: "client_env"
+        option_value: "TERM=xterm-256color"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOME=/Users/jefferson.setiawan"
+        option_name: "client_env"
+        option_value: "HOME=/Users/jefferson.setiawan"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TMPDIR=/var/folders/7c/v_jgn_s545d898f7g4qm_g0r0000gp/T/"
+        option_name: "client_env"
+        option_value: "TMPDIR=/var/folders/7c/v_jgn_s545d898f7g4qm_g0r0000gp/T/"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=USER=jefferson.setiawan"
+        option_name: "client_env"
+        option_value: "USER=jefferson.setiawan"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=XPC_SERVICE_NAME=0"
+        option_name: "client_env"
+        option_value: "XPC_SERVICE_NAME=0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LOGNAME=jefferson.setiawan"
+        option_name: "client_env"
+        option_value: "LOGNAME=jefferson.setiawan"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LaunchInstanceID=61DC7B16-D14E-4314-9266-6365AC7598D7"
+        option_name: "client_env"
+        option_value: "LaunchInstanceID=61DC7B16-D14E-4314-9266-6365AC7598D7"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=ITERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        option_name: "client_env"
+        option_value: "ITERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=__CF_USER_TEXT_ENCODING=0x1F6:0x0:0x0"
+        option_name: "client_env"
+        option_value: "__CF_USER_TEXT_ENCODING=0x1F6:0x0:0x0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SHLVL=1"
+        option_name: "client_env"
+        option_value: "SHLVL=1"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=OLDPWD=/Users/jefferson.setiawan/iOS/Experiments"
+        option_name: "client_env"
+        option_value: "OLDPWD=/Users/jefferson.setiawan/iOS/Experiments"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOMEBREW_PREFIX=/opt/homebrew"
+        option_name: "client_env"
+        option_value: "HOMEBREW_PREFIX=/opt/homebrew"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOMEBREW_CELLAR=/opt/homebrew/Cellar"
+        option_name: "client_env"
+        option_value: "HOMEBREW_CELLAR=/opt/homebrew/Cellar"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOMEBREW_REPOSITORY=/opt/homebrew"
+        option_name: "client_env"
+        option_value: "HOMEBREW_REPOSITORY=/opt/homebrew"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=MANPATH=/opt/homebrew/share/man:/opt/homebrew/share/man:::"
+        option_name: "client_env"
+        option_value: "MANPATH=/opt/homebrew/share/man:/opt/homebrew/share/man:::"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=INFOPATH=/opt/homebrew/share/info:/opt/homebrew/share/info:"
+        option_name: "client_env"
+        option_value: "INFOPATH=/opt/homebrew/share/info:/opt/homebrew/share/info:"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=RBENV_SHELL=zsh"
+        option_name: "client_env"
+        option_value: "RBENV_SHELL=zsh"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=ZSH=/Users/jefferson.setiawan/.oh-my-zsh"
+        option_name: "client_env"
+        option_value: "ZSH=/Users/jefferson.setiawan/.oh-my-zsh"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PAGER=less"
+        option_name: "client_env"
+        option_value: "PAGER=less"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LESS=-R"
+        option_name: "client_env"
+        option_value: "LESS=-R"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LSCOLORS=Gxfxcxdxbxegedabagacad"
+        option_name: "client_env"
+        option_value: "LSCOLORS=Gxfxcxdxbxegedabagacad"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LANG=en_US.UTF-8"
+        option_name: "client_env"
+        option_value: "LANG=en_US.UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LANGUAGE=en_US.UTF-8"
+        option_name: "client_env"
+        option_value: "LANGUAGE=en_US.UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_ALL=en_US.UTF-8"
+        option_name: "client_env"
+        option_value: "LC_ALL=en_US.UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SNAPSHOT_DUMP_PATH=/Users/jefferson.setiawan/iOS/ios-tokopedia"
+        option_name: "client_env"
+        option_value: "SNAPSHOT_DUMP_PATH=/Users/jefferson.setiawan/iOS/ios-tokopedia"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LS_COLORS=no=00:fi=00:di=01;31:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:"
+        option_name: "client_env"
+        option_value: "LS_COLORS=no=00:fi=00:di=01;31:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PNPM_HOME=/Users/jefferson.setiawan/Library/pnpm"
+        option_name: "client_env"
+        option_value: "PNPM_HOME=/Users/jefferson.setiawan/Library/pnpm"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=_=/opt/homebrew/bin/bazel"
+        option_name: "client_env"
+        option_value: "_=/opt/homebrew/bin/bazel"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=BAZELISK_SKIP_WRAPPER=true"
+        option_name: "client_env"
+        option_value: "BAZELISK_SKIP_WRAPPER=true"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_cwd=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        option_name: "client_cwd"
+        option_value: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--features=swift.index_while_building"
+        option_name: "features"
+        option_value: "swift.index_while_building"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--output_groups=+swift_index_store"
+        option_name: "output_groups"
+        option_value: "+swift_index_store"
+        effect_tags: EXECUTION
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--build_event_text_file=event_text_file.txt"
+        option_name: "build_event_text_file"
+        option_value: "event_text_file.txt"
+        effect_tags: AFFECTS_OUTPUTS
+      }
+    }
+  }
+  sections {
+    section_label: "residual"
+    chunk_list {
+      chunk: "//ios/DummyApplication"
+    }
+  }
+}
+}
+
+event {
+id {
+  structured_command_line {
+    command_line_label: "tool"
+  }
+}
+structured_command_line {
+}
+}
+
+event {
+id {
+  options_parsed {
+  }
+}
+options_parsed {
+  startup_options: "--max_idle_secs=10800"
+  startup_options: "--noshutdown_on_low_sys_mem"
+  startup_options: "--connect_timeout_secs=30"
+  startup_options: "--output_user_root=/var/tmp/_bazel_jefferson.setiawan"
+  startup_options: "--output_base=/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a"
+  startup_options: "--failure_detail_out=/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/failure_detail.rawproto"
+  startup_options: "--expand_configs_in_place"
+  startup_options: "--idle_server_tasks"
+  startup_options: "--write_command_log"
+  startup_options: "--nowatchfs"
+  startup_options: "--nofatal_event_bus_exceptions"
+  startup_options: "--nowindows_enable_symlinks"
+  startup_options: "--noclient_debug"
+  cmd_line: "--apple_platform_type=ios"
+  cmd_line: "--ios_minimum_os=12.0"
+  cmd_line: "--watchos_minimum_os=3.0"
+  cmd_line: "--cpu=ios_sim_arm64"
+  cmd_line: "--spawn_strategy=local"
+  cmd_line: "--features=swift.use_global_module_cache"
+  cmd_line: "--swiftcopt=-whole-module-optimization"
+  cmd_line: "--host_swiftcopt=-whole-module-optimization"
+  cmd_line: "--subcommands=1"
+  cmd_line: "--verbose_failures"
+  cmd_line: "--copt=-Osize"
+  cmd_line: "--features=swift.index_while_building"
+  cmd_line: "--output_groups=+swift_index_store"
+  cmd_line: "--build_event_text_file=event_text_file.txt"
+  explicit_cmd_line: "--features=swift.index_while_building"
+  explicit_cmd_line: "--output_groups=+swift_index_store"
+  explicit_cmd_line: "--build_event_text_file=event_text_file.txt"
+  invocation_policy {
+  }
+}
+}
+
+event {
+id {
+  structured_command_line {
+    command_line_label: "original"
+  }
+}
+structured_command_line {
+  command_line_label: "original"
+  sections {
+    section_label: "executable"
+    chunk_list {
+      chunk: "bazel"
+    }
+  }
+  sections {
+    section_label: "startup options"
+    option_list {
+    }
+  }
+  sections {
+    section_label: "command"
+    chunk_list {
+      chunk: "build"
+    }
+  }
+  sections {
+    section_label: "command options"
+    option_list {
+      option {
+        combined_form: "--rc_source=client"
+        option_name: "rc_source"
+        option_value: "client"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=0:common=--isatty=1"
+        option_name: "default_override"
+        option_value: "0:common=--isatty=1"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=0:common=--terminal_columns=80"
+        option_name: "default_override"
+        option_value: "0:common=--terminal_columns=80"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--rc_source=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel/.bazelrc"
+        option_name: "rc_source"
+        option_value: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel/.bazelrc"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--curses=no"
+        option_name: "default_override"
+        option_value: "1:test=--curses=no"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--compilation_mode=fastbuild"
+        option_name: "default_override"
+        option_value: "1:test=--compilation_mode=fastbuild"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--test_output=all"
+        option_name: "default_override"
+        option_value: "1:test=--test_output=all"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:test=--test_timeout=3600"
+        option_name: "default_override"
+        option_value: "1:test=--test_timeout=3600"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--apple_platform_type=ios"
+        option_name: "default_override"
+        option_value: "1:build=--apple_platform_type=ios"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--ios_minimum_os=12.0"
+        option_name: "default_override"
+        option_value: "1:build=--ios_minimum_os=12.0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--watchos_minimum_os=3.0"
+        option_name: "default_override"
+        option_value: "1:build=--watchos_minimum_os=3.0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--cpu=ios_sim_arm64"
+        option_name: "default_override"
+        option_value: "1:build=--cpu=ios_sim_arm64"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--spawn_strategy=local"
+        option_name: "default_override"
+        option_value: "1:build=--spawn_strategy=local"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--features=swift.use_global_module_cache"
+        option_name: "default_override"
+        option_value: "1:build=--features=swift.use_global_module_cache"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--swiftcopt=-whole-module-optimization"
+        option_name: "default_override"
+        option_value: "1:build=--swiftcopt=-whole-module-optimization"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--host_swiftcopt=-whole-module-optimization"
+        option_name: "default_override"
+        option_value: "1:build=--host_swiftcopt=-whole-module-optimization"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--subcommands"
+        option_name: "default_override"
+        option_value: "1:build=--subcommands"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--verbose_failures"
+        option_name: "default_override"
+        option_value: "1:build=--verbose_failures"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--default_override=1:build=--copt=-Osize"
+        option_name: "default_override"
+        option_value: "1:build=--copt=-Osize"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--startup_time=1516"
+        option_name: "startup_time"
+        option_value: "1516"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--command_wait_time=0"
+        option_name: "command_wait_time"
+        option_value: "0"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--extract_data_time=0"
+        option_name: "extract_data_time"
+        option_value: "0"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--restart_reason=no_daemon"
+        option_name: "restart_reason"
+        option_value: "no_daemon"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--binary_path=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin/bazel"
+        option_name: "binary_path"
+        option_value: "/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin/bazel"
+        effect_tags: AFFECTS_OUTPUTS
+        effect_tags: BAZEL_MONITORING
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        option_name: "client_env"
+        option_value: "TERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.CR5LwROwM4/Listeners"
+        option_name: "client_env"
+        option_value: "SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.CR5LwROwM4/Listeners"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_TERMINAL_VERSION=3.4.19"
+        option_name: "client_env"
+        option_value: "LC_TERMINAL_VERSION=3.4.19"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=COLORFGBG=7;0"
+        option_name: "client_env"
+        option_value: "COLORFGBG=7;0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=ITERM_PROFILE=Default"
+        option_name: "client_env"
+        option_value: "ITERM_PROFILE=Default"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=XPC_FLAGS=0x0"
+        option_name: "client_env"
+        option_value: "XPC_FLAGS=0x0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PWD=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        option_name: "client_env"
+        option_value: "PWD=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SHELL=/bin/zsh"
+        option_name: "client_env"
+        option_value: "SHELL=/bin/zsh"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=__CFBundleIdentifier=com.googlecode.iterm2"
+        option_name: "client_env"
+        option_value: "__CFBundleIdentifier=com.googlecode.iterm2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SECURITYSESSIONID=186cc"
+        option_name: "client_env"
+        option_value: "SECURITYSESSIONID=186cc"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_CTYPE=UTF-8"
+        option_name: "client_env"
+        option_value: "LC_CTYPE=UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM_PROGRAM_VERSION=3.4.19"
+        option_name: "client_env"
+        option_value: "TERM_PROGRAM_VERSION=3.4.19"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM_PROGRAM=iTerm.app"
+        option_name: "client_env"
+        option_value: "TERM_PROGRAM=iTerm.app"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        option_name: "client_env"
+        option_value: "PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_TERMINAL=iTerm2"
+        option_name: "client_env"
+        option_value: "LC_TERMINAL=iTerm2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=COLORTERM=truecolor"
+        option_name: "client_env"
+        option_value: "COLORTERM=truecolor"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=COMMAND_MODE=unix2003"
+        option_name: "client_env"
+        option_value: "COMMAND_MODE=unix2003"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TERM=xterm-256color"
+        option_name: "client_env"
+        option_value: "TERM=xterm-256color"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOME=/Users/jefferson.setiawan"
+        option_name: "client_env"
+        option_value: "HOME=/Users/jefferson.setiawan"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=TMPDIR=/var/folders/7c/v_jgn_s545d898f7g4qm_g0r0000gp/T/"
+        option_name: "client_env"
+        option_value: "TMPDIR=/var/folders/7c/v_jgn_s545d898f7g4qm_g0r0000gp/T/"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=USER=jefferson.setiawan"
+        option_name: "client_env"
+        option_value: "USER=jefferson.setiawan"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=XPC_SERVICE_NAME=0"
+        option_name: "client_env"
+        option_value: "XPC_SERVICE_NAME=0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LOGNAME=jefferson.setiawan"
+        option_name: "client_env"
+        option_value: "LOGNAME=jefferson.setiawan"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LaunchInstanceID=61DC7B16-D14E-4314-9266-6365AC7598D7"
+        option_name: "client_env"
+        option_value: "LaunchInstanceID=61DC7B16-D14E-4314-9266-6365AC7598D7"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=ITERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        option_name: "client_env"
+        option_value: "ITERM_SESSION_ID=w0t1p0:24CE50D9-2C6B-4091-945F-C4A709C4DAE2"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=__CF_USER_TEXT_ENCODING=0x1F6:0x0:0x0"
+        option_name: "client_env"
+        option_value: "__CF_USER_TEXT_ENCODING=0x1F6:0x0:0x0"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SHLVL=1"
+        option_name: "client_env"
+        option_value: "SHLVL=1"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=OLDPWD=/Users/jefferson.setiawan/iOS/Experiments"
+        option_name: "client_env"
+        option_value: "OLDPWD=/Users/jefferson.setiawan/iOS/Experiments"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOMEBREW_PREFIX=/opt/homebrew"
+        option_name: "client_env"
+        option_value: "HOMEBREW_PREFIX=/opt/homebrew"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOMEBREW_CELLAR=/opt/homebrew/Cellar"
+        option_name: "client_env"
+        option_value: "HOMEBREW_CELLAR=/opt/homebrew/Cellar"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=HOMEBREW_REPOSITORY=/opt/homebrew"
+        option_name: "client_env"
+        option_value: "HOMEBREW_REPOSITORY=/opt/homebrew"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=MANPATH=/opt/homebrew/share/man:/opt/homebrew/share/man:::"
+        option_name: "client_env"
+        option_value: "MANPATH=/opt/homebrew/share/man:/opt/homebrew/share/man:::"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=INFOPATH=/opt/homebrew/share/info:/opt/homebrew/share/info:"
+        option_name: "client_env"
+        option_value: "INFOPATH=/opt/homebrew/share/info:/opt/homebrew/share/info:"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=RBENV_SHELL=zsh"
+        option_name: "client_env"
+        option_value: "RBENV_SHELL=zsh"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=ZSH=/Users/jefferson.setiawan/.oh-my-zsh"
+        option_name: "client_env"
+        option_value: "ZSH=/Users/jefferson.setiawan/.oh-my-zsh"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PAGER=less"
+        option_name: "client_env"
+        option_value: "PAGER=less"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LESS=-R"
+        option_name: "client_env"
+        option_value: "LESS=-R"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LSCOLORS=Gxfxcxdxbxegedabagacad"
+        option_name: "client_env"
+        option_value: "LSCOLORS=Gxfxcxdxbxegedabagacad"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LANG=en_US.UTF-8"
+        option_name: "client_env"
+        option_value: "LANG=en_US.UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LANGUAGE=en_US.UTF-8"
+        option_name: "client_env"
+        option_value: "LANGUAGE=en_US.UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LC_ALL=en_US.UTF-8"
+        option_name: "client_env"
+        option_value: "LC_ALL=en_US.UTF-8"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=SNAPSHOT_DUMP_PATH=/Users/jefferson.setiawan/iOS/ios-tokopedia"
+        option_name: "client_env"
+        option_value: "SNAPSHOT_DUMP_PATH=/Users/jefferson.setiawan/iOS/ios-tokopedia"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=LS_COLORS=no=00:fi=00:di=01;31:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:"
+        option_name: "client_env"
+        option_value: "LS_COLORS=no=00:fi=00:di=01;31:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=PNPM_HOME=/Users/jefferson.setiawan/Library/pnpm"
+        option_name: "client_env"
+        option_value: "PNPM_HOME=/Users/jefferson.setiawan/Library/pnpm"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=_=/opt/homebrew/bin/bazel"
+        option_name: "client_env"
+        option_value: "_=/opt/homebrew/bin/bazel"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_env=BAZELISK_SKIP_WRAPPER=true"
+        option_name: "client_env"
+        option_value: "BAZELISK_SKIP_WRAPPER=true"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--client_cwd=/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        option_name: "client_cwd"
+        option_value: "/Users/jefferson.setiawan/iOS/Experiments/simple_bazel"
+        effect_tags: CHANGES_INPUTS
+        metadata_tags: HIDDEN
+      }
+      option {
+        combined_form: "--features=swift.index_while_building"
+        option_name: "features"
+        option_value: "swift.index_while_building"
+        effect_tags: CHANGES_INPUTS
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--output_groups=+swift_index_store"
+        option_name: "output_groups"
+        option_value: "+swift_index_store"
+        effect_tags: EXECUTION
+        effect_tags: AFFECTS_OUTPUTS
+      }
+      option {
+        combined_form: "--build_event_text_file=event_text_file.txt"
+        option_name: "build_event_text_file"
+        option_value: "event_text_file.txt"
+        effect_tags: AFFECTS_OUTPUTS
+      }
+    }
+  }
+  sections {
+    section_label: "residual"
+    chunk_list {
+      chunk: "//ios/DummyApplication"
+    }
+  }
+}
+}
+
+event {
+id {
+  pattern {
+    pattern: "//ios/DummyApplication"
+  }
+}
+children {
+  target_configured {
+    label: "//ios/DummyApplication:DummyApplication"
+  }
+}
+expanded {
+}
+}
+
+event {
+id {
+  progress {
+  }
+}
+children {
+  progress {
+    opaque_count: 1
+  }
+}
+children {
+  workspace {
+  }
+}
+progress {
+  stderr: "\033[32mLoading:\033[0m \n\r\033[1A\033[K\033[32mLoading:\033[0m 0 packages loaded\n\r\033[1A\033[K\033[32mLoading:\033[0m 0 packages loaded\n"
+}
+}
+
+event {
+id {
+  workspace {
+  }
+}
+workspace_info {
+  local_exec_root: "/private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 1
+  }
+}
+children {
+  progress {
+    opaque_count: 2
+  }
+}
+children {
+  configuration {
+    id: "0cc932e3b556aec368a442fdeae63253c9b6fa46f6579d766d600c68fe7c6ee8"
+  }
+}
+progress {
+}
+}
+
+event {
+id {
+  configuration {
+    id: "0cc932e3b556aec368a442fdeae63253c9b6fa46f6579d766d600c68fe7c6ee8"
+  }
+}
+configuration {
+  mnemonic: "ios_sim_arm64-fastbuild"
+  platform_name: "ios_sim_arm64"
+  cpu: "ios_sim_arm64"
+  make_variable {
+    key: "BINDIR"
+    value: "bazel-out/ios_sim_arm64-fastbuild/bin"
+  }
+  make_variable {
+    key: "COMPILATION_MODE"
+    value: "fastbuild"
+  }
+  make_variable {
+    key: "GENDIR"
+    value: "bazel-out/ios_sim_arm64-fastbuild/bin"
+  }
+  make_variable {
+    key: "TARGET_CPU"
+    value: "ios_sim_arm64"
+  }
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 2
+  }
+}
+children {
+  progress {
+    opaque_count: 3
+  }
+}
+children {
+  configuration {
+    id: "d061e4d4c4c47e4225a04c2acdfa47895dfde6306bcb7de7992b19b9e719d4d3"
+  }
+}
+progress {
+}
+}
+
+event {
+id {
+  configuration {
+    id: "d061e4d4c4c47e4225a04c2acdfa47895dfde6306bcb7de7992b19b9e719d4d3"
+  }
+}
+configuration {
+  mnemonic: "applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7"
+  platform_name: "ios_sim_arm64"
+  cpu: "ios_sim_arm64"
+  make_variable {
+    key: "BINDIR"
+    value: "bazel-out/applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin"
+  }
+  make_variable {
+    key: "COMPILATION_MODE"
+    value: "fastbuild"
+  }
+  make_variable {
+    key: "GENDIR"
+    value: "bazel-out/applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin"
+  }
+  make_variable {
+    key: "TARGET_CPU"
+    value: "ios_sim_arm64"
+  }
+}
+}
+
+event {
+id {
+  target_configured {
+    label: "//ios/DummyApplication:DummyApplication"
+  }
+}
+children {
+  target_completed {
+    label: "//ios/DummyApplication:DummyApplication"
+    configuration {
+      id: "d061e4d4c4c47e4225a04c2acdfa47895dfde6306bcb7de7992b19b9e719d4d3"
+    }
+  }
+}
+configured {
+  target_kind: "ios_application rule"
+}
+}
+
+event {
+id {
+  workspace_status {
+  }
+}
+workspace_status {
+  item {
+    key: "BUILD_EMBED_LABEL"
+  }
+  item {
+    key: "BUILD_HOST"
+    value: "BA-00019650.local"
+  }
+  item {
+    key: "BUILD_TIMESTAMP"
+    value: "1683519251"
+  }
+  item {
+    key: "BUILD_USER"
+    value: "jefferson.setiawan"
+  }
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 3
+  }
+}
+children {
+  progress {
+    opaque_count: 4
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (1 packages loaded, \\\n0 targets configured)\n\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n    Fetching @local_config_xcode; Fetching the default Xcode version\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n    Fetching @local_config_xcode; Building xcode-locator\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n    Fetching @local_config_xcode; Building xcode-locator\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n    Fetching @local_config_xcode; Building xcode-locator\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n    Fetching @local_config_xcode; Running xcode-locator\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n    Fetching ...onfig_xcode; Fetching SDK information for Xcode 14.3.0.14E222b\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (37 packages loaded,\\\n 165 targets configured)\n\r\033[1A\033[K\r\033[1A\033[K\033[32mAnalyzing:\033[0m target //ios/DummyApplication:DummyApplication (55 packages loaded,\\\n 543 targets configured)\n    currently loading: ios/Pdp\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32mINFO: \033[0mAnalyzed target //ios/DummyApplication:DummyApplication (67 packages loaded, 1046 targets configured).\n\n\r\033[1A\033[K\033[32mINFO: \033[0mFound 1 target...\n\n\r\033[1A\033[K\033[32m[9 / 30]\033[0m 2 actions, 0 running\n    [Prepa] BazelWorkspaceStatusAction stable-status.txt\n    [Prepa] //ios/DummyApplication:DummyApplication\n    [Prepa] @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/common:bazel_substitutions [action \'Compiling tools/common/bazel_substitutions.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/_objs/bazel_substitutions/bazel_substitutions.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/_objs/bazel_substitutions/bazel_substitutions.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/common/bazel_substitutions.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/_objs/bazel_substitutions/bazel_substitutions.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[20 / 55]\033[0m 4 actions, 2 running\n    //ios/DummyApplication:DummyApplication; 0s local\n    @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner; 0s local\n    [Prepa] Compiling tools/common/process.cc\n    [Prepa] Compiling tools/common/bazel_substitutions.cc\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/common:process [action \'Compiling tools/common/process.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/_objs/process/process.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/_objs/process/process.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/common/process.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/_objs/process/process.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[20 / 55]\033[0m 5 actions, 2 running\n    //ios/DummyApplication:DummyApplication; 0s local\n    @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner; 0s local\n    [Prepa] Compiling tools/common/process.cc\n    [Prepa] Compiling tools/worker/compile_without_worker.cc\n    [Sched] Compiling tools/common/bazel_substitutions.cc\n"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 4
+  }
+}
+children {
+  progress {
+    opaque_count: 5
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:compile_without_worker [action \'Compiling tools/worker/compile_without_worker.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_without_worker/compile_without_worker.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_without_worker/compile_without_worker.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/compile_without_worker.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_without_worker/compile_without_worker.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[20 / 55]\033[0m 5 actions, 3 running\n    //ios/DummyApplication:DummyApplication; 0s local\n    @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner; 0s local\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    [Prepa] Compiling tools/worker/compile_without_worker.cc\n    [Sched] Compiling tools/common/process.cc\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:swift_runner [action \'Compiling tools/worker/swift_runner.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/swift_runner/swift_runner.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/swift_runner/swift_runner.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/swift_runner.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/swift_runner/swift_runner.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[20 / 55]\033[0m 8 actions, 5 running\n    //ios/DummyApplication:DummyApplication; 0s local\n    @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner; 0s local\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    Compiling tools/common/process.cc; 0s local\n    Compiling tools/worker/compile_without_worker.cc; 0s local\n    [Prepa] Compiling tools/worker/swift_runner.cc\n    [Prepa] Compiling tools/worker/worker_main.cc\n    [Prepa] Compiling tools/worker/output_file_map.cc\n"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 5
+  }
+}
+children {
+  progress {
+    opaque_count: 6
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:swift_runner [action \'Compiling tools/worker/output_file_map.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/swift_runner/output_file_map.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/swift_runner/output_file_map.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/output_file_map.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/swift_runner/output_file_map.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[20 / 55]\033[0m 8 actions, 6 running\n    //ios/DummyApplication:DummyApplication; 0s local\n    @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner; 0s local\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    Compiling tools/common/process.cc; 0s local\n    Compiling tools/worker/compile_without_worker.cc; 0s local\n    Compiling tools/worker/swift_runner.cc; 0s local\n    [Prepa] Compiling tools/worker/worker_main.cc\n    [Prepa] Compiling tools/worker/output_file_map.cc\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:worker [action \'Compiling tools/worker/worker_main.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -iquote external/bazel_tools -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/bazel_tools -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/worker/worker_main.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/worker/worker_main.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/worker_main.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/worker/worker_main.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[20 / 55]\033[0m 8 actions, 7 running\n    //ios/DummyApplication:DummyApplication; 0s local\n    @build_bazel_rules_apple//tools/xctoolrunner:xctoolrunner; 0s local\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    Compiling tools/common/process.cc; 0s local\n    Compiling tools/worker/compile_without_worker.cc; 0s local\n    Compiling tools/worker/swift_runner.cc; 0s local\n    Compiling tools/worker/output_file_map.cc; 0s local\n    [Prepa] Compiling tools/worker/worker_main.cc\n"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 6
+  }
+}
+children {
+  progress {
+    opaque_count: 7
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:compile_with_worker [action \'Compiling tools/worker/compile_with_worker.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_with_worker/compile_with_worker.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_with_worker/compile_with_worker.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/compile_with_worker.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_with_worker/compile_with_worker.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[22 / 55]\033[0m 8 actions, 6 running\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    Compiling tools/common/process.cc; 0s local\n    Compiling tools/worker/compile_without_worker.cc; 0s local\n    Compiling tools/worker/swift_runner.cc; 0s local\n    Compiling tools/worker/output_file_map.cc; 0s local\n    Compiling tools/worker/worker_main.cc; 0s local\n    [Prepa] Compiling tools/worker/compile_with_worker.cc\n    [Prepa] Compiling tools/worker/work_processor.cc\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:compile_with_worker [action \'Compiling tools/worker/work_processor.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_with_worker/work_processor.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_with_worker/work_processor.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/work_processor.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/compile_with_worker/work_processor.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[22 / 55]\033[0m 8 actions, 7 running\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    Compiling tools/common/process.cc; 0s local\n    Compiling tools/worker/compile_without_worker.cc; 0s local\n    Compiling tools/worker/swift_runner.cc; 0s local\n    Compiling tools/worker/output_file_map.cc; 0s local\n    Compiling tools/worker/worker_main.cc; 0s local\n    Compiling tools/worker/compile_with_worker.cc; 0s local\n    [Prepa] Compiling tools/worker/work_processor.cc\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[22 / 55]\033[0m 8 actions running\n    Compiling tools/common/bazel_substitutions.cc; 0s local\n    Compiling tools/common/process.cc; 0s local\n    Compiling tools/worker/compile_without_worker.cc; 0s local\n    Compiling tools/worker/swift_runner.cc; 0s local\n    Compiling tools/worker/output_file_map.cc; 0s local\n    Compiling tools/worker/worker_main.cc; 0s local\n    Compiling tools/worker/compile_with_worker.cc; 0s local\n    Compiling tools/worker/work_processor.cc; 0s local\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[23 / 55]\033[0m 8 actions, 7 running\n    Compiling tools/common/bazel_substitutions.cc; 1s local\n    Compiling tools/common/process.cc; 1s local\n    Compiling tools/worker/compile_without_worker.cc; 1s local\n    Compiling tools/worker/swift_runner.cc; 1s local\n    Compiling tools/worker/output_file_map.cc; 1s local\n    Compiling tools/worker/compile_with_worker.cc; 1s local\n    Compiling tools/worker/work_processor.cc; 1s local\n    [Scann] Compiling tools/worker/worker_protocol.cc\n"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 7
+  }
+}
+children {
+  progress {
+    opaque_count: 8
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:worker_protocol [action \'Compiling tools/worker/worker_protocol.cc\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang_pp \'-D_FORTIFY_SOURCE=1\' -fstack-protector -fcolor-diagnostics -Wall -Wthread-safety -Wself-assign -fno-omit-frame-pointer -g0 -O2 -DNDEBUG \'-DNS_BLOCK_ASSERTIONS=1\' \'-std=c++11\' \'DEBUG_PREFIX_MAP_PWD=.\' -iquote external/build_bazel_rules_swift -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift -iquote external/com_github_nlohmann_json -iquote bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json -isystem external/com_github_nlohmann_json/include -isystem bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/com_github_nlohmann_json/include -MD -MF bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/worker_protocol/worker_protocol.d \'-frandom-seed=bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/worker_protocol/worker_protocol.o\' -isysroot __BAZEL_XCODE_SDKROOT__ -F__BAZEL_XCODE_SDKROOT__/System/Library/Frameworks -F__BAZEL_XCODE_DEVELOPER_DIR__/Platforms/MacOSX.platform/Developer/Library/Frameworks -no-canonical-prefixes -pthread -g0 -g0 \'-std=c++17\' -no-canonical-prefixes -Wno-builtin-macro-redefined \'-D__DATE__=\"redacted\"\' \'-D__TIMESTAMP__=\"redacted\"\' \'-D__TIME__=\"redacted\"\' -target arm64-apple-macosx13.3 -c external/build_bazel_rules_swift/tools/worker/worker_protocol.cc -o bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/_objs/worker_protocol/worker_protocol.o)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[23 / 55]\033[0m 8 actions, 7 running\n    Compiling tools/common/bazel_substitutions.cc; 1s local\n    Compiling tools/common/process.cc; 1s local\n    Compiling tools/worker/compile_without_worker.cc; 1s local\n    Compiling tools/worker/swift_runner.cc; 1s local\n    Compiling tools/worker/output_file_map.cc; 1s local\n    Compiling tools/worker/compile_with_worker.cc; 1s local\n    Compiling tools/worker/work_processor.cc; 1s local\n    [Prepa] Compiling tools/worker/worker_protocol.cc\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:compile_without_worker [action \'Linking external/build_bazel_rules_swift/tools/worker/libcompile_without_worker.a\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/libcompile_without_worker.a-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[24 / 55]\033[0m 8 actions, 7 running\n    Compiling tools/common/bazel_substitutions.cc; 1s local\n    Compiling tools/common/process.cc; 1s local\n    Compiling tools/worker/swift_runner.cc; 1s local\n    Compiling tools/worker/output_file_map.cc; 1s local\n    Compiling tools/worker/compile_with_worker.cc; 1s local\n    Compiling tools/worker/work_processor.cc; 1s local\n    Compiling tools/worker/worker_protocol.cc; 0s local\n    [Prepa] @build_bazel_rules_swift//tools/worker:compile_without_worker\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/common:process [action \'Linking external/build_bazel_rules_swift/tools/common/libprocess.a\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/libprocess.a-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[25 / 55]\033[0m 8 actions, 7 running\n    Compiling tools/common/bazel_substitutions.cc; 1s local\n    Compiling tools/worker/swift_runner.cc; 1s local\n    Compiling tools/worker/output_file_map.cc; 1s local\n    Compiling tools/worker/compile_with_worker.cc; 1s local\n    Compiling tools/worker/work_processor.cc; 1s local\n    Compiling tools/worker/worker_protocol.cc; 0s local\n    @build_bazel_rules_swift//tools/worker:compile_without_worker; 0s local\n    [Prepa] Linking external/build_bazel_rules_swift/tools/common/libprocess.a\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/common:bazel_substitutions [action \'Linking external/build_bazel_rules_swift/tools/common/libbazel_substitutions.a\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/common/libbazel_substitutions.a-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[39 / 66]\033[0m 7 actions, 6 running\n    Compiling tools/worker/swift_runner.cc; 1s local\n    Compiling tools/worker/output_file_map.cc; 1s local\n    Compiling tools/worker/compile_with_worker.cc; 1s local\n    Compiling tools/worker/work_processor.cc; 1s local\n    Compiling tools/worker/worker_protocol.cc; 0s local\n    @build_bazel_rules_apple//tools/plisttool:plisttool; 0s local\n    [Prepa] @build_bazel_rules_swift//tools/common:bazel_substitutions\n"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 8
+  }
+}
+children {
+  progress {
+    opaque_count: 9
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[56 / 76]\033[0m 4 actions running\n    Compiling tools/worker/swift_runner.cc; 1s local\n    Compiling tools/worker/output_file_map.cc; 1s local\n    Compiling tools/worker/work_processor.cc; 1s local\n    Compiling tools/worker/worker_protocol.cc; 0s local\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[57 / 76]\033[0m 4 actions, 3 running\n    Compiling tools/worker/swift_runner.cc; 2s local\n    Compiling tools/worker/output_file_map.cc; 2s local\n    Compiling tools/worker/worker_protocol.cc; 1s local\n    [Prepa] @build_bazel_rules_swift//tools/worker:compile_with_worker\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:compile_with_worker [action \'Linking external/build_bazel_rules_swift/tools/worker/libcompile_with_worker.a\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/libcompile_with_worker.a-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[57 / 76]\033[0m 4 actions, 3 running\n    Compiling tools/worker/swift_runner.cc; 2s local\n    Compiling tools/worker/output_file_map.cc; 2s local\n    Compiling tools/worker/worker_protocol.cc; 1s local\n    [Prepa] @build_bazel_rules_swift//tools/worker:compile_with_worker\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[59 / 76]\033[0m 2 actions running\n    Compiling tools/worker/output_file_map.cc; 2s local\n    Compiling tools/worker/worker_protocol.cc; 1s local\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:swift_runner [action \'Linking external/build_bazel_rules_swift/tools/worker/libswift_runner.a\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/libswift_runner.a-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[60 / 76]\033[0m 2 actions, 1 running\n    Compiling tools/worker/worker_protocol.cc; 1s local\n    [Prepa] @build_bazel_rules_swift//tools/worker:swift_runner\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[61 / 76]\033[0m Compiling tools/worker/worker_protocol.cc; 1s local\n\r\033[1A\033[K\033[32m[62 / 76]\033[0m [Prepa] @build_bazel_rules_swift//tools/worker:worker_protocol\n\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:worker_protocol [action \'Linking external/build_bazel_rules_swift/tools/worker/libworker_protocol.a\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/libworker_protocol.a-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[62 / 76]\033[0m [Prepa] @build_bazel_rules_swift//tools/worker:worker_protocol\n\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# @build_bazel_rules_swift//tools/worker:worker [action \'Linking external/build_bazel_rules_swift/tools/worker/worker\', configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=MacOSX \\\n    APPLE_SDK_VERSION_OVERRIDE=13.3 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/cc_wrapper.sh @bazel-out/darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec/bin/external/build_bazel_rules_swift/tools/worker/worker-2.params)\n# Configuration: b6e71313420abf8626233a151faf425593d4fd1fdbeb24dafd7fa7add1fdcf4d\n# Execution platform: @local_config_platform//:host\n\033[32m[63 / 76]\033[0m [Prepa] Linking external/build_bazel_rules_swift/tools/worker/worker\n\r\033[1A\033[K\033[32m[64 / 76]\033[0m checking cached actions\n\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# //ios/Pdp:Pdp [action \'Linking ios/Pdp/libPdp.a\', configuration: 68a11c94c9810682f6be24109e7d496590c76eb207888e9cccde5edac5f60ebc, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=iPhoneSimulator \\\n    APPLE_SDK_VERSION_OVERRIDE=16.4 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/ios-sim_arm64-min11.0-applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/Pdp/libPdp.a-2.params)\n# Configuration: 68a11c94c9810682f6be24109e7d496590c76eb207888e9cccde5edac5f60ebc\n# Execution platform: @local_config_platform//:host\n\033[32m[66 / 76]\033[0m 2 actions, 0 running\n    [Prepa] Linking ios/SwiftLibrary/libSwiftLibrary.a\n    [Prepa] Linking ios/Pdp/libPdp.a\n"
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 9
+  }
+}
+children {
+  progress {
+    opaque_count: 10
+  }
+}
+children {
+  named_set {
+    id: "0"
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# //ios/SwiftLibrary:SwiftLibrary [action \'Linking ios/SwiftLibrary/libSwiftLibrary.a\', configuration: 68a11c94c9810682f6be24109e7d496590c76eb207888e9cccde5edac5f60ebc, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=iPhoneSimulator \\\n    APPLE_SDK_VERSION_OVERRIDE=16.4 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/ios-sim_arm64-min11.0-applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/SwiftLibrary/libSwiftLibrary.a-2.params)\n# Configuration: 68a11c94c9810682f6be24109e7d496590c76eb207888e9cccde5edac5f60ebc\n# Execution platform: @local_config_platform//:host\n\033[32m[66 / 76]\033[0m 2 actions, 0 running\n    [Prepa] Linking ios/SwiftLibrary/libSwiftLibrary.a\n    [Sched] Linking ios/Pdp/libPdp.a\n\r\033[1A\033[K\r\033[1A\033[K\r\033[1A\033[K\033[32m[68 / 76]\033[0m checking cached actions\n\r\033[1A\033[K\033[32m[69 / 76]\033[0m [Prepa] Linking ios/DummyApplication/libAppSource.a\n\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# //ios/DummyApplication:AppSource [action \'Linking ios/DummyApplication/libAppSource.a\', configuration: 68a11c94c9810682f6be24109e7d496590c76eb207888e9cccde5edac5f60ebc, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=iPhoneSimulator \\\n    APPLE_SDK_VERSION_OVERRIDE=16.4 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/libtool @bazel-out/ios-sim_arm64-min11.0-applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/DummyApplication/libAppSource.a-2.params)\n# Configuration: 68a11c94c9810682f6be24109e7d496590c76eb207888e9cccde5edac5f60ebc\n# Execution platform: @local_config_platform//:host\n\033[32m[69 / 76]\033[0m [Prepa] Linking ios/DummyApplication/libAppSource.a\n\r\033[1A\033[K\033[34mSUBCOMMAND: \033[0m# //ios/DummyApplication:DummyApplication [action \'Linking ios/DummyApplication/DummyApplication_bin\', configuration: d061e4d4c4c47e4225a04c2acdfa47895dfde6306bcb7de7992b19b9e719d4d3, execution platform: @local_config_platform//:host]\n(cd /private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__ && \\\n  exec env - \\\n    APPLE_SDK_PLATFORM=iPhoneSimulator \\\n    APPLE_SDK_VERSION_OVERRIDE=16.4 \\\n    PATH=/Users/jefferson.setiawan/Library/Caches/bazelisk/downloads/bazelbuild/bazel-5.3.0-darwin-arm64/bin:/Users/jefferson.setiawan/Library/pnpm:/Users/jefferson.setiawan/Downloads/flutter/bin:/opt/homebrew/opt/node@16/bin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/jefferson.setiawan/.rbenv/shims:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin \\\n    XCODE_VERSION_OVERRIDE=14.3.0.14E222b \\\n    ZERO_AR_DATE=1 \\\n  external/local_config_cc/wrapped_clang @bazel-out/ios-sim_arm64-min11.0-applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/DummyApplication/DummyApplication_bin-2.params)\n# Configuration: d061e4d4c4c47e4225a04c2acdfa47895dfde6306bcb7de7992b19b9e719d4d3\n# Execution platform: @local_config_platform//:host\n\033[32m[70 / 76]\033[0m [Prepa] Linking ios/DummyApplication/DummyApplication_bin\n"
+}
+}
+
+event {
+id {
+  named_set {
+    id: "0"
+  }
+}
+named_set_of_files {
+  files {
+    name: "ios/DummyApplication/DummyApplication.ipa"
+    uri: "file:///private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__/bazel-out/applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/DummyApplication/DummyApplication.ipa"
+    path_prefix: "bazel-out"
+    path_prefix: "applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7"
+    path_prefix: "bin"
+  }
+}
+}
+
+event {
+id {
+  target_completed {
+    label: "//ios/DummyApplication:DummyApplication"
+    configuration {
+      id: "d061e4d4c4c47e4225a04c2acdfa47895dfde6306bcb7de7992b19b9e719d4d3"
+    }
+  }
+}
+completed {
+  success: true
+  output_group {
+    name: "default"
+    file_sets {
+      id: "0"
+    }
+  }
+  important_output {
+    name: "ios/DummyApplication/DummyApplication.ipa"
+    uri: "file:///private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/execroot/__main__/bazel-out/applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/DummyApplication/DummyApplication.ipa"
+    path_prefix: "bazel-out"
+    path_prefix: "applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7"
+    path_prefix: "bin"
+  }
+}
+}
+
+event {
+id {
+  build_finished {
+  }
+}
+children {
+  build_tool_logs {
+  }
+}
+children {
+  build_metrics {
+  }
+}
+finished {
+  overall_success: true
+  finish_time_millis: 1683519256268
+  exit_code {
+    name: "SUCCESS"
+  }
+  finish_time {
+    seconds: 1683519256
+    nanos: 268000000
+  }
+}
+}
+
+event {
+id {
+  build_metrics {
+  }
+}
+build_metrics {
+  action_summary {
+    actions_created: 461
+    actions_executed: 28
+    actions_created_not_including_aspects: 460
+    action_data {
+      mnemonic: "CppLink"
+      actions_executed: 10
+      first_started_ms: 1683519252981
+      last_ended_ms: 1683519255978
+    }
+    action_data {
+      mnemonic: "CppCompile"
+      actions_executed: 9
+      first_started_ms: 1683519251741
+      last_ended_ms: 1683519254933
+    }
+    action_data {
+      mnemonic: "SymlinkTree"
+      actions_executed: 7
+      first_started_ms: 1683519251720
+      last_ended_ms: 1683519253349
+    }
+    action_data {
+      mnemonic: "BazelWorkspaceStatusAction"
+      actions_executed: 1
+      first_started_ms: 1683519251712
+      last_ended_ms: 1683519251758
+    }
+    action_data {
+      mnemonic: "ObjcLink"
+      actions_executed: 1
+      first_started_ms: 1683519255979
+      last_ended_ms: 1683519256236
+    }
+    runner_count {
+      name: "total"
+      count: 28
+    }
+    runner_count {
+      name: "internal"
+      count: 8
+    }
+    runner_count {
+      name: "local"
+      count: 20
+    }
+  }
+  memory_metrics {
+    garbage_metrics {
+      type: "G1 Old Gen"
+      garbage_collected: 121032
+    }
+    garbage_metrics {
+      type: "G1 Survivor Space"
+      garbage_collected: 7340032
+    }
+    garbage_metrics {
+      type: "G1 Eden Space"
+      garbage_collected: 479199232
+    }
+  }
+  target_metrics {
+    targets_configured: 1058
+    targets_configured_not_including_aspects: 1046
+  }
+  package_metrics {
+    packages_loaded: 67
+  }
+  timing_metrics {
+    cpu_time_in_ms: 8906
+    wall_time_in_ms: 10695
+    analysis_phase_time_in_ms: 5326
+  }
+  cumulative_metrics {
+    num_analyses: 1
+    num_builds: 1
+  }
+  artifact_metrics {
+    source_artifacts_read {
+      size_in_bytes: 1770231
+      count: 79
+    }
+    output_artifacts_seen {
+      size_in_bytes: 39267752
+      count: 4388
+    }
+    output_artifacts_from_action_cache {
+      size_in_bytes: 36441256
+      count: 4350
+    }
+    top_level_artifacts {
+      size_in_bytes: 1830054
+      count: 4
+    }
+  }
+  build_graph_metrics {
+    action_lookup_value_count: 401
+    action_count: 460
+    output_artifact_count: 487
+    post_invocation_skyframe_node_count: 4262
+    action_lookup_value_count_not_including_aspects: 390
+    action_count_not_including_aspects: 460
+    input_file_configured_target_count: 94
+    output_file_configured_target_count: 2
+    other_configured_target_count: 10
+  }
+}
+}
+
+event {
+id {
+  progress {
+    opaque_count: 10
+  }
+}
+progress {
+  stderr: "\r\033[1A\033[KTarget //ios/DummyApplication:DummyApplication up-to-date:\n\033[32m[76 / 76]\033[0m checking cached actions\n\r\033[1A\033[K  bazel-out/applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/DummyApplication/DummyApplication.ipa\n\033[32m[76 / 76]\033[0m checking cached actions\n\r\033[1A\033[K\033[32mINFO: \033[0mElapsed time: 12.190s, Critical Path: 3.99s\n\033[32m[76 / 76]\033[0m checking cached actions\n\r\033[1A\033[K\033[32mINFO: \033[0m28 processes: 8 internal, 20 local.\n\033[32m[76 / 76]\033[0m checking cached actions\n\r\033[1A\033[K\033[32mINFO:\033[0m Build completed successfully, 28 total actions\n"
+}
+}
+
+event {
+id {
+  build_tool_logs {
+  }
+}
+last_message: true
+build_tool_logs {
+  log {
+    name: "elapsed time"
+    contents: "12.190000"
+  }
+  log {
+    name: "critical path"
+    contents: "Critical Path: 3.99s, Remote (0.00% of the time): [parse: 0.00%, queue: 0.00%, network: 0.00%, upload: 0.00%, setup: 0.00%, process: 0.00%, fetch: 0.00%, retry: 0.00%, processOutputs: 0.00%, other: 0.00%, input files: 0, input bytes: 0, memory bytes: 0]\n  0.00s runfiles for //ios/DummyApplication:DummyApplication\n  0.00s action \'Processing and signing DummyApplication\'\n  0.00s action \'Bundling DummyApplication\'\n  0.00s action \'SwiftStdlibCopy ios/DummyApplication/DummyApplication-intermediates/swiftlibs\'\n  0.00s action \'Creating symlink bazel-out/applebin_ios-ios_sim_arm64-fastbuild-ST-3e7cf612a4a7/bin/ios/DummyApplication/DummyApplication_lipobin\'\n  0.26s action \'Linking ios/DummyApplication/DummyApplication_bin\'\n  0.05s action \'Linking ios/DummyApplication/libAppSource.a\'\n  0.42s action \'Compiling Swift module //ios/DummyApplication:AppSource\'\n  0.35s action \'Compiling Swift module //ios/Pdp:Pdp\'\n  0.18s action \'Linking external/build_bazel_rules_swift/tools/worker/worker\'\n  0.05s action \'Linking external/build_bazel_rules_swift/tools/worker/libswift_runner.a\'\n  2.68s action \'Compiling tools/worker/output_file_map.cc\'\n  0.00s BazelCppSemantics_build_arch_darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec for @build_bazel_rules_swift//tools/worker:swift_runner\n  0.00s BazelCppSemantics_build_arch_darwin_arm64-opt-exec-2B5CBBC6-ST-a5ade5f9d4ec for @build_bazel_rules_swift//tools/common:process"
+  }
+  log {
+    name: "process stats"
+    contents: "28 processes: 8 internal, 20 local."
+  }
+  log {
+    name: "command.profile.gz"
+    uri: "file:///private/var/tmp/_bazel_jefferson.setiawan/0a97f6ff63bc294951f7920b024b892a/command.profile.gz"
+  }
+}
+}
+
